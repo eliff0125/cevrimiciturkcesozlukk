@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkçe Çevrimiçi Sözlük</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf3f3;
+            color: #222;
+        }
+        header {
+            background-color: #c70000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+        header img {
+            height: 50px;
+        }
+        header h1 {
+            font-size: 26px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #b00000;
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+        button {
+            grid-column: span 2;
+            background-color: #d40000;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #a80000;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ffcccc;
+        }
+        footer {
+            text-align: center;
+            margin: 40px 0 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Türkçe Çevrimiçi Sözlük</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Türk Bayrağı">
+    </header>
+    <main>
+        <h2>Kelimeni Ara</h2>
+        <form id="wordForm">
+            <div>
+                <label>Kelimeni Yaz:</label>
+                <input type="text" id="kelime" required>
+            </div>
+                                               <button type="submit">Ara</button>
+        </form>
+
+        <h2>Sözlük Tablosu</h2>
+            <table>
+      <thead><tr><th>Kelime</th><th>Günümüz Türkçesi</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Âbâ</strong></td><td>1.atalar,  babalar, pederler  2.yünden</td></tr>
+<tr><td><strong>Âbânî</strong></td><td>ipekten , sarıya çalar bir renkte dallı</td></tr>
+<tr><td><strong>Abes</strong></td><td>boş , anlamsız, gayesiz, saçma.</td></tr>
+<tr><td><strong>Ab-ı rûy</strong></td><td>yüzsuyu , şeref, haysiyet, namus.</td></tr>
+<tr><td><strong>A’dâd</strong></td><td>adetler , sayı lar.</td></tr>
+<tr><td><strong>Adale</strong></td><td>kas, kaslar.</td></tr>
+<tr><td><strong>Adem</strong></td><td>yokluk , hiçlik, olmama, bulunmama</td></tr>
+<tr><td><strong>Adû</strong></td><td>düşman .</td></tr>
+<tr><td><strong>Afâk</strong></td><td>ufuklar , dış alemler; taraflar, yönler.</td></tr>
+<tr><td><strong>Ağniyâ</strong></td><td>zenginler,ganiler.</td></tr>
+<tr><td><strong>Âğûş</strong></td><td>kucak,sığınılacak yer.</td></tr>
+<tr><td><strong>Ağyâr</strong></td><td>başkaları , yabancılar, düşmanlar,</td></tr>
+<tr><td><strong>Âhâd</strong></td><td>birler , birden dokuza kadar olan sayılar.</td></tr>
+<tr><td><strong>Ahcâr</strong></td><td>taşlar .</td></tr>
+<tr><td><strong>Ahenîn</strong></td><td>demirden,demir gibi; çok kuvvetli, pek</td></tr>
+<tr><td><strong>Aheste</strong></td><td>yavaş , ağır, usul.</td></tr>
+<tr><td><strong>Ahfâd</strong></td><td>torunlar , hafidler.</td></tr>
+<tr><td><strong>Ahiren</strong></td><td>sonradan . Son olarak, geçenlerde, son</td></tr>
+<tr><td><strong>Ahlâf</strong></td><td>gelecek  nesiller.</td></tr>
+<tr><td><strong>Ahlât</strong></td><td>kar ıştırılmaya elverişli, çok</td></tr>
+<tr><td><strong>Ahrâr</strong></td><td>hür  kişiler, özgürler, esir ve köle</td></tr>
+<tr><td><strong>Ahyâ</strong></td><td>diriler, canl ılar.</td></tr>
+<tr><td><strong>Akabât</strong></td><td>1 . Korkunç durumlar, tehlikeli anlar. 2.</td></tr>
+<tr><td><strong>Akdâh</strong></td><td>kadehler .  Akdes: en  mukaddes, en mübarek, en kutsal.</td></tr>
+<tr><td><strong>Âkil</strong></td><td>yiyen , yiyici.</td></tr>
+<tr><td><strong>Akîm</strong></td><td>neticesiz, beyhude, sonuçsuz; kısır,</td></tr>
+<tr><td><strong>Aksâ</strong></td><td>en  son, uzak, en uzak.</td></tr>
+<tr><td><strong>Aktâr</strong></td><td>1 . Her taraf, her yer, taraflar, yöreler</td></tr>
+<tr><td><strong>Akvâl</strong></td><td>sözler , kaviller, konuşmalar.</td></tr>
+<tr><td><strong>Akvâm</strong></td><td>kavimler , ırklar, milletler.</td></tr>
+<tr><td><strong>Âlâm</strong></td><td>elemler ,kederler,acılar, üzüntüler.</td></tr>
+<tr><td><strong>Amâde</strong></td><td>hazır, hazırlanmış.</td></tr>
+<tr><td><strong>A’mâk</strong></td><td>derinlikler .</td></tr>
+<tr><td><strong>Amâl</strong></td><td>amell er, işler; emeller, arzular, istekler.</td></tr>
+<tr><td><strong>Amel -mânde</strong></td><td>iş göremez durumda olan.</td></tr>
+<tr><td><strong>Âmennâ</strong></td><td>inandık , iman ettik.</td></tr>
+<tr><td><strong>Amîk</strong></td><td>derin .</td></tr>
+<tr><td><strong>Amûd</strong></td><td>sütun , direk.</td></tr>
+<tr><td><strong>An- karib</strong></td><td>yakından , en kısa zamanda, çok</td></tr>
+<tr><td><strong>Ananât</strong></td><td>ananeler , gelenekler.</td></tr>
+<tr><td><strong>Anâsır</strong></td><td>unsurlar , elementler, elemanlar.</td></tr>
+<tr><td><strong>Ârâ</strong></td><td>1. Oylar, reyler, fikirler. 2.süsleyen,</td></tr>
+<tr><td><strong>Arâkiyye</strong></td><td>dervişlerin  giydikleri yünden</td></tr>
+<tr><td><strong>Ârâm</strong></td><td>1. Durma, dinlenme,sükun, karar  2.</td></tr>
+<tr><td><strong>Aramgâh</strong></td><td>dinlenme yeri, mezar.</td></tr>
+<tr><td><strong>Arsenik</strong></td><td>bir  tür element.</td></tr>
+<tr><td><strong>Arz</strong></td><td>1.toprak, yeryüzü, dünya, zemin.</td></tr>
+<tr><td><strong>Âsâr</strong></td><td>eserler , izler, nişanlar.</td></tr>
+<tr><td><strong>Asûd</strong></td><td>arslanlar , yiğitler.</td></tr>
+<tr><td><strong>Âsüman</strong></td><td>gökyüzü , sema, felek , gök kubbe.</td></tr>
+<tr><td><strong>Âşinâ</strong></td><td>bildik, tanıdık; bilen, tanıyan.</td></tr>
+<tr><td><strong>Aşiyân</strong></td><td>yuva , ev, mesken, ikametgâh, kuş</td></tr>
+<tr><td><strong>Aşûb</strong></td><td>kargaşa , karıştırıcı, karıştıran.</td></tr>
+<tr><td><strong>Ateh</strong></td><td>bunama, bunaklık</td></tr>
+<tr><td><strong>Âti</strong></td><td>gelecek , ilerideki, aşağıdaki; inatçı, kalın</td></tr>
+<tr><td><strong>Attâr</strong></td><td>baharatçı , aktar, güzel koku satan adam.</td></tr>
+<tr><td><strong>Avâlim</strong></td><td>alemler , dünyalar, cihanlar.</td></tr>
+<tr><td><strong>Âyât</strong></td><td>ayetler , menziller, mekânlar.</td></tr>
+<tr><td><strong>Ayyuk</strong></td><td>1.gökyüzünün pek yüksek</td></tr>
+<tr><td><strong>Âzâde</strong></td><td>hür , özgür, serbest, bağlardan kurtulmuş.</td></tr>
+<tr><td><strong>Ba’s</strong></td><td>1 . Dirilme, diriltme, diriliş,</td></tr>
+<tr><td><strong>Bâb</strong></td><td>1 . Kapı, bölüm, kısım, fasıl; mevzu, konu.</td></tr>
+<tr><td><strong>Bâd</strong></td><td>1 .rüzgâr , yel; soluk, nefes 2.defa, kez; yük,</td></tr>
+<tr><td><strong>Bâde</strong></td><td>şarap, içki; k adeh..</td></tr>
+<tr><td><strong>Bâdî</strong></td><td>1 .sebep, sebep olan, yol açan; halk eden,</td></tr>
+<tr><td><strong>Badîye</strong></td><td>çöl , sahra; kır, ova.</td></tr>
+<tr><td><strong>Bâh</strong></td><td>şehvet, cinsel güç.</td></tr>
+<tr><td><strong>Bahr</strong></td><td>1 .deniz, büyük göl veya nehir.  2.âlim, çok</td></tr>
+<tr><td><strong>Bahr -i ahmer</strong></td><td>kızıldeniz.</td></tr>
+<tr><td><strong>Bahs -i dûradûr</strong></td><td>uzayıp  giden mevzu.</td></tr>
+<tr><td><strong>Bâlâ</strong></td><td>üst , yukarı, yüksek, yüce.</td></tr>
+<tr><td><strong>Bâr</strong></td><td>1 .yük, zah met, eziyet, ağırlık.  2.yemiş,</td></tr>
+<tr><td><strong>Bârân</strong></td><td>yağmur , rahmet.</td></tr>
+<tr><td><strong>Bargâh</strong></td><td>yüksek huzur, padişah huzuru, otağ,</td></tr>
+<tr><td><strong>Bârû</strong></td><td>sur , kale duvarı, burç, hisar burcu ,</td></tr>
+<tr><td><strong>Ba'sü ba'de'l -mevt</strong></td><td>ölümden sonra diriliş.</td></tr>
+<tr><td><strong>Bâzîçe</strong></td><td>oyuncak , eğlence.</td></tr>
+<tr><td><strong>Bedâyi</strong></td><td>eşi benzeri olmayan g üzellikler.</td></tr>
+<tr><td><strong>Bedi'</strong></td><td>güzel, eşsiz güzel, benzersiz, beğenilen, yepyeni, eşi ve benzeri olmayan.  Bedî:   benzersiz güzel, üstün, özgün.</td></tr>
+<tr><td><strong>Bedîhî</strong></td><td>isp at gerektirmeyecek kadar açık,</td></tr>
+<tr><td><strong>Bedreka</strong></td><td>kılavuz , uğurlama, yolcu etme.</td></tr>
+<tr><td><strong>Behâim</strong></td><td>hayvanlar, Suriye’de bir sıradağ.</td></tr>
+<tr><td><strong>Behîmî</strong></td><td>hayvanca, hayvani, hayvana yakışır</td></tr>
+<tr><td><strong>Beht</strong></td><td>şaşkınlık, hayranlık; yalan söylemek,</td></tr>
+<tr><td><strong>Bekâ</strong></td><td>kalıcılık , devamlılık, ebedilik, ölmezlik.</td></tr>
+<tr><td><strong>Beliyyât</strong></td><td>belalar , gamlar, felaketler, kederler,</td></tr>
+<tr><td><strong>Benân</strong></td><td>parmaklar , parmak uçları.</td></tr>
+<tr><td><strong>Benât</strong></td><td>kızlar , bebekler.</td></tr>
+<tr><td><strong>Bendegân</strong></td><td>padişahın  hizmetindekiler, kullar,</td></tr>
+<tr><td><strong>Ber</strong></td><td>1. Üzere, üzerine, yukarı.  2.göğüs, sine,</td></tr>
+<tr><td><strong>Berâhîn</strong></td><td>deliller , kanıtlar, şahitler.</td></tr>
+<tr><td><strong>Berceste</strong></td><td>1 . Seçkin, seçme, sağlam ve latif.</td></tr>
+<tr><td><strong>Berdâr</strong></td><td>asılmış , yukarı kaldırılmış; tutucu, itaat</td></tr>
+<tr><td><strong>Berf</strong></td><td>kar .</td></tr>
+<tr><td><strong>Berhâne</strong></td><td>eskiyip  harap olmuş konak, ev.</td></tr>
+<tr><td><strong>Berhudâr</strong></td><td>mutlu , saadete erişen, selamette.</td></tr>
+<tr><td><strong>Berîn</strong></td><td>1.ço k yüksek, en yüce, yüksek, yüce</td></tr>
+<tr><td><strong>Berk</strong></td><td>1.katı, sert, sağlam. 2. şimşek, yıldırım,</td></tr>
+<tr><td><strong>Berk -i nigâh</strong></td><td>şimşek  (gibi) bakış.</td></tr>
+<tr><td><strong>Bermu’tâd</strong></td><td>alışıldığı  üzere, her zamanki gibi.</td></tr>
+<tr><td><strong>Bernâme</strong></td><td>mektup  başlığı, zarfın  üzerindeki</td></tr>
+<tr><td><strong>Berzede</strong></td><td>biriktirilmiş , toplanılmış, bir araya</td></tr>
+<tr><td><strong>Besîm</strong></td><td>güleryüz’ü, güleç.</td></tr>
+<tr><td><strong>Beşâret</strong></td><td>müjde , muştu, iyi haber, müjdeleme.</td></tr>
+<tr><td><strong>Beşuş</strong></td><td>güleryüzlü , şen.</td></tr>
+<tr><td><strong>Bevad</strong></td><td>mahvolma , yok olma.</td></tr>
+<tr><td><strong>Beyâbân</strong></td><td>çöl , sahra, kır.</td></tr>
+<tr><td><strong>Beyyinât</strong></td><td>deliller , mucize li açık ayetler, açık ve</td></tr>
+<tr><td><strong>Beyzâ</strong></td><td>1.beyaz, bembeyaz, parlak; yumurta.</td></tr>
+<tr><td><strong>Bezl</strong></td><td>cömertçe  vermek, bol bol vermek,</td></tr>
+<tr><td><strong>Bezm</strong></td><td>1.sohbet m eclisi, eğlence meclisi, içki</td></tr>
+<tr><td><strong>Bî-aram</strong></td><td>durup  dinlenmeme.</td></tr>
+<tr><td><strong>Bîdâr</strong></td><td>uyanık , uykusuz, uyumayan.</td></tr>
+<tr><td><strong>Bidâyet</strong></td><td>başlangıç , başlama; ilk önce, ilk olarak.</td></tr>
+<tr><td><strong>Bîhûş  (et -)</strong></td><td>aklını başından almak.</td></tr>
+<tr><td><strong>Bîhûş</strong></td><td>akılsız, şaşkın, sersem.</td></tr>
+<tr><td><strong>Bi-insaf</strong></td><td>insafsız, acımasız.</td></tr>
+<tr><td><strong>Bîkes</strong></td><td>kimsesiz .</td></tr>
+<tr><td><strong>Bilfarz</strong></td><td>farz edelim ki, diyelim ki, varsaymakla,</td></tr>
+<tr><td><strong>Bimâr</strong></td><td>hasta.</td></tr>
+<tr><td><strong>Bî-meâl</strong></td><td>anlamsız, manasız.</td></tr>
+<tr><td><strong>Bîn</strong></td><td>gören anlamında son ek.</td></tr>
+<tr><td><strong>Bina</strong></td><td>göz, gören, görücü; ev, yapı, bina e tme, dayandırma.  Bî-payân: sınırsız, sonsuz.</td></tr>
+<tr><td><strong>Bister</strong></td><td>yatak, döşek.</td></tr>
+<tr><td><strong>Bîtâb</strong></td><td>güçsüz, yorgun, takatsiz.</td></tr>
+<tr><td><strong>Bî-tenâhi</strong></td><td>sonsuz, tükenmez.</td></tr>
+<tr><td><strong>Bî-vâye</strong></td><td>nasipsiz, kısmetsiz, mahrum.</td></tr>
+<tr><td><strong>Bî-zar</strong></td><td>bıkmış, usanmış, bezginlik.</td></tr>
+<tr><td><strong>Bû'd</strong></td><td>uzaklık, mesafe, aralık, boyut.</td></tr>
+<tr><td><strong>Bûd</strong></td><td>varlık , uzaklık.</td></tr>
+<tr><td><strong>Buhayre</strong></td><td>göl, küçük deniz.</td></tr>
+<tr><td><strong>Buk’a</strong></td><td>ülke , yer, diyar, yer parçası, boş ve ıssız</td></tr>
+<tr><td><strong>Burûc</strong></td><td>burçlar .</td></tr>
+<tr><td><strong>Büd u nebüd</strong></td><td>var  yok, oldu olmadı.</td></tr>
+<tr><td><strong>Büka</strong></td><td>ağlama .</td></tr>
+<tr><td><strong>Bülend</strong></td><td>yüce , yüksek, büyük.</td></tr>
+<tr><td><strong>Bünyâd (kur -)</strong></td><td>temel atmak.</td></tr>
+<tr><td><strong>Bünyâd</strong></td><td>t emel, kök, yapı, bina.</td></tr>
+<tr><td><strong>Bünyân</strong></td><td>bina , yapı, duvar, saray.</td></tr>
+<tr><td><strong>Bürehne</strong></td><td>açık , yalın, çıplak.</td></tr>
+<tr><td><strong>Cahim</strong></td><td>cehennem, cehennemin dördüncü</td></tr>
+<tr><td><strong>Cahîmî</strong></td><td>cehennem gibi.</td></tr>
+<tr><td><strong>Câmedâ n</strong></td><td>gardrop.</td></tr>
+<tr><td><strong>Câmid</strong></td><td>cansız, donmuş, donuk, hareketsiz,</td></tr>
+<tr><td><strong>Câri</strong></td><td>akan,  akıcı geçerli, yürürlükte, yürüyen.</td></tr>
+<tr><td><strong>Câvidâ n</strong></td><td>ebedi, sonsuz, kalıcı.</td></tr>
+<tr><td><strong>Cây</strong></td><td>yer, makam, mevki; değer, layık.</td></tr>
+<tr><td><strong>Cebânet</strong></td><td>korkaklık, ürkeklik.</td></tr>
+<tr><td><strong>Ceberu t</strong></td><td>azamet, büyüklük , hakimlik; baskı,</td></tr>
+<tr><td><strong>Cebin</strong></td><td>1. Alın.  2. Korkak, cesaretsiz, yüreksiz.</td></tr>
+<tr><td><strong>Cebin -i sîmîn</strong></td><td>g ümüşe benzer alın, gümüş gibi</td></tr>
+<tr><td><strong>Cebri</strong></td><td>zoraki, zorla, zorunlu olarak.</td></tr>
+<tr><td><strong>Ced</strong></td><td>ata, dede.</td></tr>
+<tr><td><strong>Cedel -gâh</strong></td><td>mücadele yeri, dünya.</td></tr>
+<tr><td><strong>Cefa-dide</strong></td><td>cefa görmüş, cefa çekmiş.</td></tr>
+<tr><td><strong>Celâdet</strong></td><td>yiğitlik, kahramanlık , bahadırlık.</td></tr>
+<tr><td><strong>Celî</strong></td><td>belli , açık, aşikar, meydanda, parlak.</td></tr>
+<tr><td><strong>Cenâh</strong></td><td>kanat, taraf, yan, yön, kısım; kol, pazu.</td></tr>
+<tr><td><strong>Cenub</strong></td><td>güney.</td></tr>
+<tr><td><strong>Cerh</strong></td><td>yaralama,yaralatma, çürütme, yara.</td></tr>
+<tr><td><strong>Ceride</strong></td><td>gazete , tutanak; yalnız, tenha.</td></tr>
+<tr><td><strong>Ceriha</strong></td><td>yara.</td></tr>
+<tr><td><strong>Cevâmî</strong></td><td>toplayıcı  olan şeyler.</td></tr>
+<tr><td><strong>Cevelan</strong></td><td>dolaşma , gezme, gezinti.</td></tr>
+<tr><td><strong>Cevelan -gâh</strong></td><td>dolaşma  yeri, gezinme yeri , gezip</td></tr>
+<tr><td><strong>Cevf</strong></td><td>iç , iç kısım, oyuk, çukur, boşluk; orta, yarı. Cevv: hava  boşluğu, gök, yer ile gök arası, gök</td></tr>
+<tr><td><strong>Ceyb</strong></td><td>cep , yaka.</td></tr>
+<tr><td><strong>Cibah</strong></td><td>cepheler , alınlar.</td></tr>
+<tr><td><strong>Cibal</strong></td><td>dağlar .</td></tr>
+<tr><td><strong>Cibal -i velveledâr</strong></td><td>sesli dağlar, gürültülü dağlar.</td></tr>
+<tr><td><strong>Cibilli</strong></td><td>y aratılıştan, mayadan , soydan; huy,</td></tr>
+<tr><td><strong>Cidâl</strong></td><td>mücadele , kavga, çekişme, cenk,</td></tr>
+<tr><td><strong>Cidâr</strong></td><td>duvar .</td></tr>
+<tr><td><strong>Cife</strong></td><td>leş , ölü hayvan, kokmuş et.</td></tr>
+<tr><td><strong>Cihâz</strong></td><td>çeyiz , alet, edevat, aygıt, sistem; organ,</td></tr>
+<tr><td><strong>Cud</strong></td><td>cömertlik , eli açık olmak.</td></tr>
+<tr><td><strong>Cuş</strong></td><td>coşma , kaynama .</td></tr>
+<tr><td><strong>Cuşiş</strong></td><td>coşkunluk , coşma, coşku.</td></tr>
+<tr><td><strong>Cuy</strong></td><td>akarsu , ırmak, çay; arayan, arama.</td></tr>
+<tr><td><strong>Cuybar</strong></td><td>akarsu , ırmak, nehir, dere, çay.</td></tr>
+<tr><td><strong>Cüdâ</strong></td><td>uzak  kalmak, ayrı düşmek, ayrı, ayrılmış,</td></tr>
+<tr><td><strong>Cündi</strong></td><td>sipahi, süvari, usta binici, ata iyi binen.</td></tr>
+<tr><td><strong>Cünun</strong></td><td>delilik , cinnet, delirmek .</td></tr>
+<tr><td><strong>Cür’a</strong></td><td>bir  yudumluk su, içim, yudum.</td></tr>
+<tr><td><strong>Çâk</strong></td><td>1.yırtmak, yırtık, çatlak, yarık, yırtmaç.</td></tr>
+<tr><td><strong>Çakşır</strong></td><td>1.ince kumaştan yapılan uzun bir çeşit</td></tr>
+<tr><td><strong>Çalâk</strong></td><td>çevik , atik, kıvrak, yerinde duramayan,</td></tr>
+<tr><td><strong>Çerâğ</strong></td><td>kandil , lamba, mum, çıra.</td></tr>
+<tr><td><strong>Çin</strong></td><td>kıvrım , kırışık, büklüm, buruşukluk.</td></tr>
+<tr><td><strong>Dalkavuk</strong></td><td>çıkar ve yarar beklediği ya da</td></tr>
+<tr><td><strong>Damǎn</strong></td><td>bir şeyi üstlenme, taahhüt ve garanti</td></tr>
+<tr><td><strong>Dani</strong></td><td>kişiler nezdinde doğacak zararlardan</td></tr>
+<tr><td><strong>Dar ü divar</strong></td><td>yer, ülke, mekân .</td></tr>
+<tr><td><strong>Daraban</strong></td><td>vurma, vuruş, çarpış, çarpıntı.</td></tr>
+<tr><td><strong>Daye</strong></td><td>çocuk hizmetçisi, çocuğa süt veren dadı,</td></tr>
+<tr><td><strong>Dehen</strong></td><td>ağız</td></tr>
+<tr><td><strong>Dehhaşe</strong></td><td>çok korkunç, dehşetli</td></tr>
+<tr><td><strong>Dehr</strong></td><td>dünya,devir,çağ,çok uzun zaman.</td></tr>
+<tr><td><strong>Dehşet</strong></td><td>bir tehlike ya da korkunç bir şey</td></tr>
+<tr><td><strong>Delâlet</strong></td><td>deliller, kanıtlar</td></tr>
+<tr><td><strong>Dem</strong></td><td>kan, soluk, ağız,nazar,an,vakit,saat.</td></tr>
+<tr><td><strong>Demâdem</strong></td><td>zaman zaman, her vakit, daima, her</td></tr>
+<tr><td><strong>Deni</strong></td><td>dünyaya ait , fani ve geçici  .</td></tr>
+<tr><td><strong>Dereke</strong></td><td>seviye, aşağı derece, gitgide alçalan</td></tr>
+<tr><td><strong>Derun</strong></td><td>içyüz,iç taraf, kalp,gönül</td></tr>
+<tr><td><strong>Derya</strong></td><td>deniz</td></tr>
+<tr><td><strong>Dest</strong></td><td>, el, (çoğulu:düşüt) dört bucaklı yastık ve</td></tr>
+<tr><td><strong>Destâr</strong></td><td>sikkeye sarılan sargı, mevlevilikte sarık</td></tr>
+<tr><td><strong>Destar</strong></td><td>eskimiş sarık, halk ağzında örtü</td></tr>
+<tr><td><strong>Desti</strong></td><td>testi.  Deva: hastalığı iyileştirici nesne, ilaç; çözüm,</td></tr>
+<tr><td><strong>Devahi</strong></td><td>felaketler, büyük afetler,kazalar,üstün</td></tr>
+<tr><td><strong>Devair</strong></td><td>daireler</td></tr>
+<tr><td><strong>Deverân</strong></td><td>dolaşma, dönme, dolaşım</td></tr>
+<tr><td><strong>Devr -i istibdad</strong></td><td>baskı dönemi</td></tr>
+<tr><td><strong>Devr -i istila</strong></td><td>istila zamanı</td></tr>
+<tr><td><strong>Deyyar</strong></td><td>manastır sahibi, biri, bir kimse, fert</td></tr>
+<tr><td><strong>Didar</strong></td><td>yüz, çehre, göz, görüş kuvveti</td></tr>
+<tr><td><strong>Dide</strong></td><td>göz/görmüş, görül müş</td></tr>
+<tr><td><strong>Didinmek</strong></td><td>hiç durmadan, kendini yıpratırcasına</td></tr>
+<tr><td><strong>Dil- hah</strong></td><td>gönlün isteği, arzusu</td></tr>
+<tr><td><strong>Dilber</strong></td><td>gönül alan güzel sevgili</td></tr>
+<tr><td><strong>Dil-nişin</strong></td><td>gönülde yer tutan. Latif hoş.</td></tr>
+<tr><td><strong>Dimağ</strong></td><td>akıl, beyin</td></tr>
+<tr><td><strong>Din-i fıtri</strong></td><td>insanın tabiatına uygun din, islam</td></tr>
+<tr><td><strong>Din-i mubin</strong></td><td>islam dini</td></tr>
+<tr><td><strong>Duhât</strong></td><td>zekiler, dâhiler</td></tr>
+<tr><td><strong>Dur</strong></td><td>uzak kalmak</td></tr>
+<tr><td><strong>Dümbelek</strong></td><td>ağzında deri gerilmiş dipsiz bir</td></tr>
+<tr><td><strong>Düra dür</strong></td><td>uzun uzadıya, uzaktan uzağa;</td></tr>
+<tr><td><strong>Dürdane- i ismet</strong></td><td>temizlik incesi</td></tr>
+<tr><td><strong>Düstur</strong></td><td>genel kural, nizam.</td></tr>
+<tr><td><strong>Düşun</strong></td><td>dış evrenin kişinin zihninde yansıması</td></tr>
+<tr><td><strong>Eb'ad</strong></td><td>çok uzak</td></tr>
+<tr><td><strong>Ebkem</strong></td><td>dilsiz</td></tr>
+<tr><td><strong>Ecdat</strong></td><td>geçmişteki büyükler, atalar ve dedeler</td></tr>
+<tr><td><strong>Ecir</strong></td><td>· bir işi yapmak için kendi kuvveti ni veya</td></tr>
+<tr><td><strong>Ecnam</strong></td><td>son, işin sonu mecaz : gelecek</td></tr>
+<tr><td><strong>Ecza</strong></td><td>tek parça, kısım ,birimler, unsurlar.</td></tr>
+<tr><td><strong>Edvar</strong></td><td>devirler, dönemler</td></tr>
+<tr><td><strong>Efkan</strong></td><td>bağırıp çağıran</td></tr>
+<tr><td><strong>Efkâr</strong></td><td>fikirler, kaygı, tasa, üzüntü ve sıkıntı</td></tr>
+<tr><td><strong>Eflaka</strong></td><td>göklere</td></tr>
+<tr><td><strong>Efrâd</strong></td><td>fertler, bireyler  ve şahıslar</td></tr>
+<tr><td><strong>Ekseriyyet</strong></td><td>çoğunluk, çokluk</td></tr>
+<tr><td><strong>Ekvan</strong></td><td>varlıklar</td></tr>
+<tr><td><strong>Elhasıl</strong></td><td>sonuç olarak</td></tr>
+<tr><td><strong>Elim izmihlal</strong></td><td>acı yok oluş</td></tr>
+<tr><td><strong>Elvah</strong></td><td>levhalar,portler,tablolar</td></tr>
+<tr><td><strong>Elzem</strong></td><td>gerekli</td></tr>
+<tr><td><strong>Emel</strong></td><td>gönülde yaşatılan ve gelecekte</td></tr>
+<tr><td><strong>Emin tarık</strong></td><td>güvenilir yol</td></tr>
+<tr><td><strong>Emvac - ı berfu baran</strong></td><td>yağmur ve kar dalgaları</td></tr>
+<tr><td><strong>Emvac</strong></td><td>dalgalar</td></tr>
+<tr><td><strong>Emvat</strong></td><td>ölüler</td></tr>
+<tr><td><strong>Enbiye</strong></td><td>nebiler, peygamberler</td></tr>
+<tr><td><strong>Encüm</strong></td><td>yıldızlar</td></tr>
+<tr><td><strong>Encümen</strong></td><td>cemiyet, meclis</td></tr>
+<tr><td><strong>Endaze</strong></td><td>eskiden kullanılan 65cm boyunda bir</td></tr>
+<tr><td><strong>Endülüs</strong></td><td>711 -1492 arasındaki müslümanlığın</td></tr>
+<tr><td><strong>Enfes</strong></td><td>putlar  Enfiye:    toz haline getirilmiş tütünün burun</td></tr>
+<tr><td><strong>Engin</strong></td><td>açık deniz çok geniş iyi</td></tr>
+<tr><td><strong>Enin i istimat</strong></td><td>yardım iniltisi</td></tr>
+<tr><td><strong>Enin</strong></td><td>inilti, feryatlar</td></tr>
+<tr><td><strong>Enini muhtazarı</strong></td><td>ölümü bekleyen</td></tr>
+<tr><td><strong>Enini ruh</strong></td><td>ruhun inleyişi</td></tr>
+<tr><td><strong>Enkaz ı tarumar beşer</strong></td><td>darmadağın</td></tr>
+<tr><td><strong>Enkaz -i beşer</strong></td><td>insan yığını</td></tr>
+<tr><td><strong>Ensar</strong></td><td>medine yerlileri hicret eden mekkelilere</td></tr>
+<tr><td><strong>Envar</strong></td><td>nurlar,ış ıklar,aydınlıklar.maddi veya</td></tr>
+<tr><td><strong>Epsar</strong></td><td>farkında olan gözler</td></tr>
+<tr><td><strong>Erbab</strong></td><td>işini iyi bilen</td></tr>
+<tr><td><strong>Erkan</strong></td><td>bir toplumun önde gelenleri, söz</td></tr>
+<tr><td><strong>Ervah</strong></td><td>ruhlar</td></tr>
+<tr><td><strong>Esaret</strong></td><td>kölelik,tutsallık ve esirlik</td></tr>
+<tr><td><strong>Esbab</strong></td><td>gerektirici sebepler, gerekçeler</td></tr>
+<tr><td><strong>Escad</strong></td><td>cesetler</td></tr>
+<tr><td><strong>Esef et -</strong></td><td>üzülmek</td></tr>
+<tr><td><strong>Eşbah</strong></td><td>uzaktan görülen karartılar ve hayaller</td></tr>
+<tr><td><strong>Eşed</strong></td><td>şiddetli</td></tr>
+<tr><td><strong>Eşhas</strong></td><td>kişiler, şahıslar</td></tr>
+<tr><td><strong>Eşkâli</strong></td><td>şekiller</td></tr>
+<tr><td><strong>Eşvak</strong></td><td>şiddetli arzular, istekler</td></tr>
+<tr><td><strong>Etfâl</strong></td><td>ç ocuklar</td></tr>
+<tr><td><strong>Etradı</strong></td><td>şahıslar, fertler</td></tr>
+<tr><td><strong>Evamir</strong></td><td>emirler</td></tr>
+<tr><td><strong>Evellce</strong></td><td>önceleri eskileri</td></tr>
+<tr><td><strong>Evham</strong></td><td>temelsiz kaygılar kuruntular ve</td></tr>
+<tr><td><strong>Evkaf</strong></td><td>vakıflar müdürlüğü</td></tr>
+<tr><td><strong>Evvel</strong></td><td>önce</td></tr>
+<tr><td><strong>Evvela</strong></td><td>ilk iş olarak ilkin ilk önce</td></tr>
+<tr><td><strong>Eyer</strong></td><td>binicinin rahat olmasını sağlamak için</td></tr>
+<tr><td><strong>Eytam</strong></td><td>yetimler</td></tr>
+<tr><td><strong>Eyyami</strong></td><td>günler</td></tr>
+<tr><td><strong>Ezeli</strong></td><td>başlangıcı olmayan, öncesiz, eski.</td></tr>
+<tr><td><strong>Faide</strong></td><td>fayda, kazanç, kar, yararlılık.</td></tr>
+<tr><td><strong>Fârûk</strong></td><td>Hz. Öme r'in lakabı. Fârûk kelimesi</td></tr>
+<tr><td><strong>Fasıl</strong></td><td>bölüm</td></tr>
+<tr><td><strong>Fasid</strong></td><td>bozuk</td></tr>
+<tr><td><strong>Faslü’l -hitab</strong></td><td>seslenme bölümü</td></tr>
+<tr><td><strong>Fatin</strong></td><td>ışık</td></tr>
+<tr><td><strong>Fazıl</strong></td><td>değerli, erdemli</td></tr>
+<tr><td><strong>Feca’ atle</strong></td><td>içler acısı</td></tr>
+<tr><td><strong>Fecayi</strong></td><td>musibet</td></tr>
+<tr><td><strong>Fecr</strong></td><td>şafak, tan ağarması.</td></tr>
+<tr><td><strong>Fecr-i nazan</strong></td><td>nazlı şafak</td></tr>
+<tr><td><strong>Fedai</strong></td><td>her tehlikeyi göze alan ülkü yolunda</td></tr>
+<tr><td><strong>Felah</strong></td><td>kurtuluş</td></tr>
+<tr><td><strong>Fenni</strong></td><td>yöntemine göre yapılan ya da yönetimine</td></tr>
+<tr><td><strong>Ferağ</strong></td><td>uzak durma</td></tr>
+<tr><td><strong>Feraiz-i iman</strong></td><td>imanın şartları</td></tr>
+<tr><td><strong>Ferda</strong></td><td>yarın, gelecek zaman.</td></tr>
+<tr><td><strong>Ferid</strong></td><td>eşsiz</td></tr>
+<tr><td><strong>Ferîk</strong></td><td>osmanlı devleti 'nin son dönemi</td></tr>
+<tr><td><strong>Fersude</strong></td><td>eskimiş</td></tr>
+<tr><td><strong>Ferş-i rahıd</strong></td><td>yolun yaygısı</td></tr>
+<tr><td><strong>Feryad</strong></td><td>bağırmak, çığlık atmak</td></tr>
+<tr><td><strong>Fes</strong></td><td>sarık  Fesad: bozulma</td></tr>
+<tr><td><strong>Fetret</strong></td><td>iki olay arasında gecen süre</td></tr>
+<tr><td><strong>Fetva</strong></td><td>din adamının verdiği dini görüş</td></tr>
+<tr><td><strong>Feve fevc</strong></td><td>dalga dalga</td></tr>
+<tr><td><strong>Fevk</strong></td><td>üst</td></tr>
+<tr><td><strong>Fevkinden</strong></td><td>üstünden</td></tr>
+<tr><td><strong>Feyfa</strong></td><td>çöl</td></tr>
+<tr><td><strong>Feylesof</strong></td><td>filozof</td></tr>
+<tr><td><strong>Feyyal</strong></td><td>fil çobanı. File bakan kimse.</td></tr>
+<tr><td><strong>Feyyaz</strong></td><td>feyyaz, arapça kökenli bir isim</td></tr>
+<tr><td><strong>Feyz</strong></td><td>feyiz (feyz) ve feyezân ke limeleri (çoğulu</td></tr>
+<tr><td><strong>Feyza</strong></td><td>bolluk, bereket, verimlilik</td></tr>
+<tr><td><strong>Feza</strong></td><td>uzay</td></tr>
+<tr><td><strong>Fezail</strong></td><td>faziletler</td></tr>
+<tr><td><strong>Fıkka</strong></td><td>ufak, çok küçük.</td></tr>
+<tr><td><strong>Fırka</strong></td><td>siyasal parti</td></tr>
+<tr><td><strong>Fıtrat</strong></td><td>yaratılış</td></tr>
+<tr><td><strong>Figan</strong></td><td>bağırmak</td></tr>
+<tr><td><strong>Fikr</strong></td><td>düşünce</td></tr>
+<tr><td><strong>Fikri hürriyet</strong></td><td>hürriyet düşüncesi</td></tr>
+<tr><td><strong>Fikr-i kavmiyet</strong></td><td>ırkçılık düşüncesi</td></tr>
+<tr><td><strong>Fikr-i nez ih</strong></td><td>temiz düşünce</td></tr>
+<tr><td><strong>Fil hakika</strong></td><td>doğrusu, gerçekten</td></tr>
+<tr><td><strong>Fitne</strong></td><td>kargaşa, karışıklık</td></tr>
+<tr><td><strong>Fuad</strong></td><td>kalp, gönül</td></tr>
+<tr><td><strong>Fuhuş</strong></td><td>haddini aşma</td></tr>
+<tr><td><strong>Fukaha</strong></td><td>fıkıh alimleri</td></tr>
+<tr><td><strong>Furkan- ı hakim</strong></td><td>hikmetli kuran</td></tr>
+<tr><td><strong>Fünun</strong></td><td>fenler</td></tr>
+<tr><td><strong>Fünun -ı hendese</strong></td><td>geometri ilimleri</td></tr>
+<tr><td><strong>Füshat</strong></td><td>genişlik</td></tr>
+<tr><td><strong>Füsul</strong></td><td>mevsim</td></tr>
+<tr><td><strong>Fütur</strong></td><td>bezginlik</td></tr>
+<tr><td><strong>Füyuzun</strong></td><td>feyizler</td></tr>
+<tr><td><strong>Gafil</strong></td><td>aymaz, habersiz, hazırlıksız</td></tr>
+<tr><td><strong>Gâhi</strong></td><td>ara sıra, zaman zaman</td></tr>
+<tr><td><strong>Gaib</strong></td><td>görülmeyen âlem, göz önünde</td></tr>
+<tr><td><strong>Galebe</strong></td><td>yenmek, üstünlük</td></tr>
+<tr><td><strong>Galeyan</strong></td><td>kaynamış, mecazen  coşma,</td></tr>
+<tr><td><strong>Galeyh</strong></td><td>kaynama</td></tr>
+<tr><td><strong>Galin</strong></td><td>yatak</td></tr>
+<tr><td><strong>Gamgin</strong></td><td>oyun</td></tr>
+<tr><td><strong>Garâbet</strong></td><td>gariplikler, tuhaflıklar</td></tr>
+<tr><td><strong>Garb</strong></td><td>batı, avrupa</td></tr>
+<tr><td><strong>Gârib</strong></td><td>yurdundan uzak kalan, bilinmeyen,</td></tr>
+<tr><td><strong>Gaye</strong></td><td>amaç, sonuç, bir şeyin son noktası, uç</td></tr>
+<tr><td><strong>Gayet</strong></td><td>aşırı ölçüde, pek çok</td></tr>
+<tr><td><strong>Gazel</strong></td><td>divan edebiyatının en yaygın nazım şekli</td></tr>
+<tr><td><strong>Gılzet</strong></td><td>kabalık, sertlik</td></tr>
+<tr><td><strong>Girdab</strong></td><td>tehlikeli yer ya da durum</td></tr>
+<tr><td><strong>Girizan</strong></td><td>kaçan, firar eden</td></tr>
+<tr><td><strong>Girudâr</strong></td><td>savaş</td></tr>
+<tr><td><strong>Girye</strong></td><td>gözyaşı</td></tr>
+<tr><td><strong>Gisu</strong></td><td>uzun saç, omuza dökü len saç</td></tr>
+<tr><td><strong>Gubar</strong></td><td>keder</td></tr>
+<tr><td><strong>Gulgule -hiz</strong></td><td>gürültü yapan</td></tr>
+<tr><td><strong>Gulgules</strong></td><td>gürültü patırtı</td></tr>
+<tr><td><strong>Gum -nam</strong></td><td>eseri kalmamış kaybolmuş</td></tr>
+<tr><td><strong>Gunagun</strong></td><td>çok çeşitli</td></tr>
+<tr><td><strong>Gurebâ</strong></td><td>yabancı, kimsesiz</td></tr>
+<tr><td><strong>Gurüb</strong></td><td>güneşin batması</td></tr>
+<tr><td><strong>Gusn</strong></td><td>kırılmış dal, ağaç dalı</td></tr>
+<tr><td><strong>Gümrah</strong></td><td>gür, bol, sık, çok  Güne:  gidiş</td></tr>
+<tr><td><strong>Güş</strong></td><td>işitmek, duymak</td></tr>
+<tr><td><strong>Güyâ</strong></td><td>sanırsın ki, sanki sözde</td></tr>
+<tr><td><strong>Güzin</strong></td><td>nadide, seçilmiş, seçkin, beğenilmiş</td></tr>
+<tr><td><strong>Hab gâh</strong></td><td>yatak odası</td></tr>
+<tr><td><strong>Hab- ı sükûn</strong></td><td>sakin uyku</td></tr>
+<tr><td><strong>Habe</strong></td><td>sahip olmak</td></tr>
+<tr><td><strong>Hacet</strong></td><td>gereklilik</td></tr>
+<tr><td><strong>Hacil</strong></td><td>utanmak , utanmış</td></tr>
+<tr><td><strong>Haç</strong></td><td>Hristiy anlıkta  önemli bir sembol</td></tr>
+<tr><td><strong>Had</strong></td><td>yetki, sınır</td></tr>
+<tr><td><strong>Hadim</strong></td><td>hizmetkâr , hizmetçi Haiz: bir şeyi</td></tr>
+<tr><td><strong>Hâk</strong></td><td>yer, toprak</td></tr>
+<tr><td><strong>Hakaik</strong></td><td>hakikatler</td></tr>
+<tr><td><strong>Hakdan</strong></td><td>allah’ın  yarattığı kul</td></tr>
+<tr><td><strong>Haki</strong></td><td>toprak</td></tr>
+<tr><td><strong>Hakikat</strong></td><td>gerçek</td></tr>
+<tr><td><strong>Hakikat -ı yelda</strong></td><td>uzun gecenin gerçeğ i</td></tr>
+<tr><td><strong>Hâkim  -i fıtrat</strong></td><td>yaratılışın hâkimi</td></tr>
+<tr><td><strong>Hakir</strong></td><td>küçük ,  önemsiz</td></tr>
+<tr><td><strong>Hakkı hayat</strong></td><td>hayat hakkı</td></tr>
+<tr><td><strong>Hak-sar</strong></td><td>yere sermek, toz  toprak içinde kalmış,</td></tr>
+<tr><td><strong>Hal</strong></td><td>durum, vaziyet, görünüş, tavır</td></tr>
+<tr><td><strong>Halas</strong></td><td>kurtuluş  kurtulma</td></tr>
+<tr><td><strong>Halef</strong></td><td>arkadan gelen, ardından gelen kimse</td></tr>
+<tr><td><strong>Haleti rühiyye</strong></td><td>ruh durumu</td></tr>
+<tr><td><strong>Halife</strong></td><td>H z Muhammet’ten  sonra, onun  vekili</td></tr>
+<tr><td><strong>Halik</strong></td><td>yaratıcı, yaratan</td></tr>
+<tr><td><strong>Halil</strong></td><td>dolu, sağanak</td></tr>
+<tr><td><strong>Halisane</strong></td><td>candan</td></tr>
+<tr><td><strong>Halk</strong></td><td>ortaya koymak, meydana çıkarma k</td></tr>
+<tr><td><strong>Hallak</strong></td><td>yaratıcı</td></tr>
+<tr><td><strong>Hamakat</strong></td><td>ahmaklık, aptallık  Hamaset:   kahraman, kahramanlık , yiğitlik</td></tr>
+<tr><td><strong>Hamiyyet</strong></td><td>milleti himaye etmekte, korumakta</td></tr>
+<tr><td><strong>Hamuş</strong></td><td>sakin, suskun</td></tr>
+<tr><td><strong>Han ü man</strong></td><td>ev bark, ail e ocağı</td></tr>
+<tr><td><strong>Hande -i nur</strong></td><td>parlak gülüş</td></tr>
+<tr><td><strong>Hane</strong></td><td>ev, konut</td></tr>
+<tr><td><strong>Hanumansız</strong></td><td>evsiz</td></tr>
+<tr><td><strong>Har</strong></td><td>hor, hakir, adi, aşağı</td></tr>
+<tr><td><strong>Hara</strong></td><td>tepinme oynama</td></tr>
+<tr><td><strong>Harab</strong></td><td>yıkılmaya yüz tutmuş ve çok eski ve</td></tr>
+<tr><td><strong>Harameyn</strong></td><td>mekke  ve medine  şehirlerini birlikte</td></tr>
+<tr><td><strong>Haras</strong></td><td>dilsizli k, dilsiz  olma</td></tr>
+<tr><td><strong>Harb</strong></td><td>savaş</td></tr>
+<tr><td><strong>Harde</strong></td><td>zorlu</td></tr>
+<tr><td><strong>Harem</strong></td><td>padişahın aile yaşamını sürdürdüğü,</td></tr>
+<tr><td><strong>Harim - i din</strong></td><td>dinin korunması</td></tr>
+<tr><td><strong>Hârim</strong></td><td>yasaklanan, korunan, saygı duyulan şey</td></tr>
+<tr><td><strong>Harim -i canan</strong></td><td>sev gili yuvası</td></tr>
+<tr><td><strong>Hasbi</strong></td><td>gönüllü olarak ve karşılık beklemeksizin</td></tr>
+<tr><td><strong>Hasıl</strong></td><td>ortaya çıkan, türeyen, var olan</td></tr>
+<tr><td><strong>Hasire</strong></td><td>zarara uğrayan</td></tr>
+<tr><td><strong>Hasis</strong></td><td>cimri</td></tr>
+<tr><td><strong>Hasm</strong></td><td>en büyük düşman</td></tr>
+<tr><td><strong>Hasmım</strong></td><td>düşman</td></tr>
+<tr><td><strong>Haş</strong></td><td>özel, çok yakın</td></tr>
+<tr><td><strong>Haşa</strong></td><td>İslam  dininde uygun olarak kabul</td></tr>
+<tr><td><strong>Haşr</strong></td><td>birlikte olmak, yan yana olma, toplanmak</td></tr>
+<tr><td><strong>Haşyet</strong></td><td>korku, korkma, endişe  duyma</td></tr>
+<tr><td><strong>Hatır</strong></td><td>düğün</td></tr>
+<tr><td><strong>Hatırat - ı latif</strong></td><td>tatlı  hatıralar</td></tr>
+<tr><td><strong>Hatip</strong></td><td>söz söyleyen, cemaatte topluluğa karşı</td></tr>
+<tr><td><strong>Hatmi enfas</strong></td><td>nefesleri tükenmek, ölmek</td></tr>
+<tr><td><strong>Hatve</strong></td><td>adım, mesafe</td></tr>
+<tr><td><strong>Havali</strong></td><td>çevre,  dolay,  yöre</td></tr>
+<tr><td><strong>Havas</strong></td><td>yüksek seviyede olanlar</td></tr>
+<tr><td><strong>Havatır</strong></td><td>akla  gelmek</td></tr>
+<tr><td><strong>Havi</strong></td><td>ihtiva  eden, içeren</td></tr>
+<tr><td><strong>Havsala</strong></td><td>zihnin bir  şeyi kavrama  derecesi</td></tr>
+<tr><td><strong>Havvas</strong></td><td>yüksek seviyede olanların, üstekilerin</td></tr>
+<tr><td><strong>Haya</strong></td><td>utanmak, çekinmek</td></tr>
+<tr><td><strong>Hayat ı nev</strong></td><td>yepyeni  yaşam</td></tr>
+<tr><td><strong>Haybet</strong></td><td>saygıya dayanan korku, mahremiyet</td></tr>
+<tr><td><strong>Hayfa</strong></td><td>yazık</td></tr>
+<tr><td><strong>Hayme</strong></td><td>çadır</td></tr>
+<tr><td><strong>Hayret</strong></td><td>beklenmedik,  şaşırtıcı, garip  bir şeyin</td></tr>
+<tr><td><strong>Haysiyet</strong></td><td>şeref, itibar</td></tr>
+<tr><td><strong>Hayyiz</strong></td><td>mekân, yer, makam</td></tr>
+<tr><td><strong>Hazin</strong></td><td>içe dokunan, üzüntü verici, acıklı</td></tr>
+<tr><td><strong>Heder</strong></td><td>boşa gitme, ziyan  olma bir işe yaramama</td></tr>
+<tr><td><strong>Helak</strong></td><td>orta dan kaldırma, yok etme</td></tr>
+<tr><td><strong>Helecan</strong></td><td>titretme, çarpıntı</td></tr>
+<tr><td><strong>Hemal</strong></td><td>taşımak</td></tr>
+<tr><td><strong>Hemşizade</strong></td><td>kız kardeşin çocuğu</td></tr>
+<tr><td><strong>Hercümerc</strong></td><td>darma dağın  Herdem: taşımak</td></tr>
+<tr><td><strong>Herze</strong></td><td>saçma sapan  söz ya da davranış . boş</td></tr>
+<tr><td><strong>Hesti</strong></td><td>varlık, var olma</td></tr>
+<tr><td><strong>Heval</strong></td><td>dost</td></tr>
+<tr><td><strong>Hey’et</strong></td><td>k urul</td></tr>
+<tr><td><strong>Heybet</strong></td><td>yücelik, azamet, büyüklük</td></tr>
+<tr><td><strong>Heybetli</strong></td><td>görünüşü korku  ve saygı uyandıran</td></tr>
+<tr><td><strong>Heyhat</strong></td><td>yazık, yazık  ki anlamında  kullanılır</td></tr>
+<tr><td><strong>Heyula</strong></td><td>korkunç  hayal, ürkütücü  şey</td></tr>
+<tr><td><strong>Hezel</strong></td><td>alay, şaka</td></tr>
+<tr><td><strong>Hezeyan</strong></td><td>abuk sabuk konuşma saçma  sapan</td></tr>
+<tr><td><strong>Hezeyas</strong></td><td>sayıklama</td></tr>
+<tr><td><strong>Hezimet</strong></td><td>bozgun</td></tr>
+<tr><td><strong>Hicran - ı müebbed</strong></td><td>sonsuz ayrılık</td></tr>
+<tr><td><strong>Hicran</strong></td><td>ayrılık</td></tr>
+<tr><td><strong>Hidayet</strong></td><td>bir kimseyi tanrı tarafından</td></tr>
+<tr><td><strong>Hiddet</strong></td><td>sinir, öfke</td></tr>
+<tr><td><strong>Hikmet i kuran</strong></td><td>kurana mahsus hikmet</td></tr>
+<tr><td><strong>Hilaf</strong></td><td>zıt</td></tr>
+<tr><td><strong>Hilkat</strong></td><td>Allah’ın  yaratması</td></tr>
+<tr><td><strong>Himme t</strong></td><td>kayırma ,yardım,çaba,çalışma</td></tr>
+<tr><td><strong>Hiram</strong></td><td>yürüme,gezinme, salınarak eda ve naz</td></tr>
+<tr><td><strong>Hissi -i milliyet</strong></td><td>milliyet duygusu</td></tr>
+<tr><td><strong>Hizb</strong></td><td>kısım, parça</td></tr>
+<tr><td><strong>Hotoz</strong></td><td>eski zamanlarda kadınların başlarına</td></tr>
+<tr><td><strong>Hödük</strong></td><td>anlayışı kıt, kaba  saba kimse</td></tr>
+<tr><td><strong>Hucü m</strong></td><td>saldırı</td></tr>
+<tr><td><strong>Hucüs</strong></td><td>sessiz, sakin durmak, alçak gönüllü</td></tr>
+<tr><td><strong>Huda</strong></td><td>doğru yol veya doğru yolu gösteren kişi</td></tr>
+<tr><td><strong>Hufre</strong></td><td>çukur</td></tr>
+<tr><td><strong>Hulul</strong></td><td>birşeyi çözmek bir yere intikal etmek</td></tr>
+<tr><td><strong>Hunu</strong></td><td>kanı</td></tr>
+<tr><td><strong>Hurab</strong></td><td>bakımsız kalmış, bakımsızlıktan</td></tr>
+<tr><td><strong>Huraf</strong></td><td>harfler</td></tr>
+      </tbody>
+            </table>
+    </main>
+
+    <footer>
+        © 2025 Türkçe Çevrimiçi Sözlük 
+    </footer>
+
+<script>
+document.getElementById("wordForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    const kelime = document.getElementById("kelime").value.toLowerCase();
+    const rows = document.querySelectorAll("table tbody tr");
+    rows.forEach(row => {
+        const kelimeTd = row.cells[0].textContent.toLowerCase();
+        if(kelimeTd.includes(kelime)){
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
