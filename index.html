@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Türkçe Çevrimiçi Sözlük</title>
     <style>
+        /* --- Görsel düzeni için ekleme --- */
+.side-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.side-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 900px) {
+    .side-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
@@ -92,6 +116,12 @@
 </head>
 <body>
     <header>
+        <div class="side-images">
+    <img src="https://scontent.fist6-1.fna.fbcdn.net/v/t1.6435-9/2019837998091289.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=K2jya9cYJ1MQ7kNvgEtkQeB&_nc_ht=scontent.fist6-1.fna&oh=00_AYCNJgOZ1nZk7T6PjU8aAYqvER6t6V6xOQ5EUToqXq7HzQ&oe=6749E3E2" alt="Mehmet Akif Ersoy">
+    
+    <img src="https://www.diyanetvakfiyayin.com.tr/Uploads/UrunResimleri/buyuk/safahat-karton-3c4b.jpg" alt="Safahat Kitabı">
+</div>
+
         <h1>Türkçe Çevrimiçi Sözlük</h1>
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Türk Bayrağı">
     </header>
@@ -1462,3 +1492,4 @@ document.getElementById("wordForm").addEventListener("submit", function(e){
 </body>
 
 </html>
+
