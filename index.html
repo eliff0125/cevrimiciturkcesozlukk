@@ -1,133 +1,136 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Türkçe Çevrimiçi Sözlük</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #fdf3f3;
-            color: #222;
-        }
-        header {
-            background-color: #c70000;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 50px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-            position: relative;
-            z-index: 2;
-        }
-        header img {
-            height: 50px;
-        }
-        header h1 {
-            font-size: 26px;
-            margin: 0;
-            letter-spacing: 1px;
-        }
-        main {
-            max-width: 900px;
-            margin: 60px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            position: relative;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Türkçe Çevrimiçi Sözlük</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #fdf3f3;
+        color: #222;
+    }
+    header {
+        background-color: #c70000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 50px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        position: relative;
+        z-index: 2;
+    }
+    header img {
+        height: 50px;
+    }
+    header h1 {
+        font-size: 26px;
+        margin: 0;
+        letter-spacing: 1px;
+    }
 
-        /* Sağ ve sol görseller */
-        .side-image-left {
-            position: absolute;
-            left: -190px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 160px;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-        .side-image-right {
-            position: absolute;
-            right: -190px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 160px;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
+    /* Sabit yan görseller */
+    .side-image-left {
+        position: fixed;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 150px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+    .side-image-right {
+        position: fixed;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 150px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
 
-        h2 {
-            text-align: center;
-            color: #b00000;
-        }
-        form {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        label {
-            font-weight: bold;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 15px;
-        }
-        button {
-            background-color: #d40000;
-            color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        button:hover {
-            background-color: #a80000;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 40px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #ffcccc;
-        }
-        footer {
-            text-align: center;
-            margin: 40px 0 10px;
-            color: #666;
-        }
-    </style>
+    main {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 30px 180px; /* Görseller için boşluk */
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        position: relative;
+    }
+    h2 {
+        text-align: center;
+        color: #b00000;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    label {
+        font-weight: bold;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+    button {
+        background-color: #d40000;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    button:hover {
+        background-color: #a80000;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 40px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+    th {
+        background-color: #ffcccc;
+    }
+    footer {
+        text-align: center;
+        margin: 40px 0 10px;
+        color: #666;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Türkçe Çevrimiçi Sözlük</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Türk Bayrağı">
-    </header>
 
-    <main>
-        <!-- Sol ve sağ görseller -->
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxEOwJDCRbK7V98bNTcThKGlH0frCj0YuQXQ&s" alt="Görsel Sol" class="side-image-left">
-        <img src="https://i.dr.com.tr/cache/600x600-0/originals/0001912073001-1.jpg" alt="Görsel Sağ" class="side-image-right">
+<header>
+    <h1>Türkçe Çevrimiçi Sözlük</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Türk Bayrağı">
+</header>
 
-        <h2>Kelimeni Ara</h2>
-        <form id="wordForm">
+<main>
+    <!-- Sabit görseller -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxEOwJDCRbK7V98bNTcThKGlH0frCj0YuQXQ&s" alt="Görsel Sol" class="side-image-left">
+    <img src="https://i.dr.com.tr/cache/600x600-0/originals/0001912073001-1.jpg" alt="Görsel Sağ" class="side-image-right">
+
+    <h2>Kelimeni Ara</h2>
+    <form id="wordForm">
             <div>
                 <label>Kelimeni Yaz:</label>
                 <input type="text" id="kelime" required>
@@ -141,7 +144,7 @@
                 <tr><th>Kelime</th><th>Günümüz Türkçesi</th></tr>
             </thead>
             <tbody>
-        <tr><td><strong>Âbâ</strong></td><td>1.atalar,  babalar, pederler  2.yünden</td></tr>
+<tr><td><strong>Âbâ</strong></td><td>1.atalar,  babalar, pederler  2.yünden</td></tr>
 <tr><td><strong>Âbânî</strong></td><td>ipekten , sarıya çalar bir renkte dallı</td></tr>
 <tr><td><strong>Abes</strong></td><td>boş , anlamsız, gayesiz, saçma.</td></tr>
 <tr><td><strong>Ab-ı rûy</strong></td><td>yüzsuyu , şeref, haysiyet, namus.</td></tr>
@@ -638,7 +641,7 @@
 <tr><td><strong>Hunu</strong></td><td>kanı</td></tr>
 <tr><td><strong>Hurab</strong></td><td>bakımsız kalmış, bakımsızlıktan</td></tr>
 <tr><td><strong>Huraf</strong></td><td>harfler</td></tr>
-<tr><td><strong>Hurafat</strong></td><td>hurafeler, harfler.</td></tr>
+                <tr><td><strong>Hurafat</strong></td><td>hurafeler, harfler.</td></tr>
 <tr><td><strong>Hurafe</strong></td><td>akla aykırı, uydurma şeyler.</td></tr>
 <tr><td><strong>Huruş aver</strong></td><td>gürültü, aşama.</td></tr>
 <tr><td><strong>Huruş</strong></td><td>coşku, coşmak.</td></tr>
@@ -1467,13 +1470,16 @@
 <tr><td><strong>Zulmet</strong></td><td>Karanlık</td></tr>
 <tr><td><strong>Zülüm</strong></td><td>Haksızlık, baskı</td></tr>
 <tr><td><strong>Zümrüt</strong></td><td>Yeşil değerli taş</td></tr>
-      </tbody>
-            </table>
+
+
+</tbody>
+        </table>
     </main>
 
-    <footer>
-        © 2025 Türkçe Çevrimiçi Sözlük 
-    </footer>
+    <footer>© 2025 Türkçe Çevrimiçi Sözlük</footer>
+
+  
+        });
 
 <script>
 document.getElementById("wordForm").addEventListener("submit", function(e){
@@ -1483,21 +1489,13 @@ document.getElementById("wordForm").addEventListener("submit", function(e){
     rows.forEach(row => {
         const kelimeTd = row.cells[0].textContent.toLowerCase();
         if(kelimeTd.includes(kelime)){
-            row.style.display = "";
+            row.style.display = ""; // göster
         } else {
-            row.style.display = "none";
+            row.style.display = "none"; // gizle
         }
     });
 });
 </script>
-
 </body>
-
 </html>
-
-
-
-
-
-
 
