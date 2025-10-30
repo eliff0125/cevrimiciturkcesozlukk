@@ -5,6 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Türkçe Çevrimiçi Sözlük</title>
 <style>
+    /* --- Mobil uyumluluk ayarları --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    header img {
+        height: 35px;
+    }
+
+    main {
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 20px; /* Görseller için fazla boşluk kaldırıldı */
+    }
+
+    /* Görseller sabit olmasın, alt alta gelsin */
+    .side-image-left, .side-image-right {
+        position: static;
+        display: block;
+        margin: 20px auto;
+        width: 60%;
+        transform: none;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
     body {
         margin: 0;
         font-family: 'Poppins', sans-serif;
@@ -1497,5 +1543,6 @@ document.getElementById("wordForm").addEventListener("submit", function(e){
 </script>
 </body>
 </html>
+
 
 
